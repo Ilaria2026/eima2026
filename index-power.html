@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Touch Screen EIMA 2026 - POWER</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Boostrap-->
+	<link href="css/bootstrap-grid.css" rel="stylesheet">
+	<!--Link foglio CSS-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--Google font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;700&display=swap" rel="stylesheet">
+	<!--JavaScript-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/2bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="tabs-container">
+        <!-- Pulsanti delle schede -->
+        <div class="tabs-nav">
+            <button class="tab-button active" onclick="openTab(event, 'scheda1')">1</button>
+            <button class="tab-button" onclick="openTab(event, 'scheda2')">2</button>
+            <button class="tab-button" onclick="openTab(event, 'scheda3')">3</button>
+        </div>
+
+        <!-- Contenuto delle schede -->
+        <div class="tabs-content">
+            <div id="scheda1" class="tab-panel active">
+				<div class="row"> 
+			 		<div class="col-12">
+                	<h1>BHP22 On-Board Charger</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+                	<h5>BHP22 is a 22 kW bidirectional, high-power-density power module designed for on-board battery-powered vehicle applications. <br></h5>
+<p>It combines versatility, safety and high efficiency, leveraging the latest SiC semiconductor and power conversion technologies to deliver outstanding performance even in harsh operating conditions.<br>The BHP22 can be connected to either single-phase or three-phase AC power and operates in both Forward Charger Mode and Reverse Power Mode, enabling bidirectional functionality and V2L applications.<br>
+The BHP22 has been successfully tested in compliance with international EMC, safety and environmental standards.</p><br>
+					<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Technical Data Sheet</button>
+					</div>
+					<div class="col-6">
+					<p>• 22 kW AC three-phase bidirectional operation (7.3 kW AC single phase)<br>
+					• Parallelable in charge and export power mode<br>
+					• AC charger - SAE J1772 and EN 61851 compliance<br>
+					• DC fast charging (CCS) communication – ISO 15118 and DIN 70121 compliance<br>
+					• Export power (V2L) and V2G (ISO 15118 compliance)<br>
+					• AC plug locking/unlocking management<br>
+					• HVDC interlock monitoring<br>
+					• Typical efficiency >94%<br>
+					• AC/DC galvanic isolation<br>
+					• Functional safety (ASIL-B) and cybersecurity compliant<br>
+					• IP67, IP6K9K protection rating<br>
+					• HVDC outputs are short-circuit and reverse polarity protected<br>
+					• Fully CAN monitored and controlled (v2.0B and FD)<br>
+					• SAE J1939 and ISO 14229 (UDS) compliant<br>
+					• UL1741, IEEE1547 compliant</p>
+					</div>
+				</div>
+           </div>
+
+            <div id="scheda2" class="tab-panel">
+                <div class="row"> 
+			 		<div class="col-12">
+                	<h1>Traction Inverter</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-5">
+					<h5>Inverters represent the core of the electric propulsion system, converting the battery's direct current into alternating current to power high-performance motors and actuators.<br>
+The traction inverter is designed for medium-sized commercial vehicles but can be adapted to a wide range of applications requiring power levels up to 150 kW.<br>
+Its wide operating voltage range, from 48 V to 1000 V, ensures maximum flexibility and versatility.</h5>
+					</div>
+					<div class="col-7">
+					<p>• 3-phase motor controller / inverter<br>
+					• Voltage range 48-900 VDC<br>
+					• DC current measure<br>
+					• Max electrical output power 190 kW<br>
+					• Multiple resolver / encoder compatibility<br>
+					• Four quadrant operation<br>
+					• Variable switching frequency<br>
+					• High power and current densities<br>
+					• Adaptable to different types of three-phase motors<br>
+					• 11 internal / external temperature sensors<br>
+					• Liquid cooling, 10-15 L/min<br>
+					• Out spare, 4 Low Side + 2 Hi Side; configurable for alarms or other use<br>
+					• Connectors: PowerLok Amphenol G2 (1 x 3P + 1 x 2P), 1 x RTS014N19P03 19P Circular connector for Motor Signals, 1 x ATV04-38PC-S2 38P rectangular connector for signals<br>
+					• Configurable bleed resistor<br>
+					• High voltage leakage measurement (optional)<br>
+					• IP65<br>
+					• Gore valve</p>
+					</div>
+            	</div>
+			</div>
+			
+			<div id="scheda3" class="tab-panel">
+                <div class="row"> 
+			 		<div class="col-12">
+                	<h1>High Voltage Battery Management System</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-5">
+					<h5>The Battery Management System (BMS) monitors and manages lithium-ion batteries, optimizing performance while minimizing aging effects.<br>
+The BMS is designed to oversee and control high-voltage battery systems in hybrid and electric vehicles, as well as in motorcycles and stationary applications.</h5>
+					</div>
+					<div class="col-7">
+					<p>• 6 HV voltage sense<br>
+					• 6 temperature reading (of which 4 on busbars)<br>
+					• 6 contactor drivers (precharge, discharge, recharge)<br>
+					• 4 CAN communication to vehicle powertrain<br>
+					• Isolated communication interface to CSC Stack<br>
+					• Support for external current monitor<br>
+					• 2 HVIL active management<br>
+					• Pyroswitch driver<br>
+					• HV insulation monitoring<br>
+					• ISO 26262 – Up to Asil Level C<br>
+					• CAN communication management</p>
+					</div>
+            	</div>
+			</div>
+            
+        </div>
+    </div>
+	
+	<!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <embed src="pdf/BHP22KL Series rev 09 25.05.21+BHP19KL Series rev 12.pdf"
+                               frameborder="0" width="100%" height="500px">
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Script JavaScript per gestire l'apertura -->
+    <script>
+        function openTab(event, tabId) {
+            // Nasconde tutti i pannelli di contenuto
+            const panels = document.querySelectorAll('.tab-panel');
+            panels.forEach(panel => panel.classList.remove('active'));
+
+            // Rimuove la classe 'active' da tutti i pulsanti
+            const buttons = document.querySelectorAll('.tab-button');
+            buttons.forEach(button => button.classList.remove('active'));
+
+            // Mostra il pannello corrente e aggiunge la classe 'active' al pulsante cliccato
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>

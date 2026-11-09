@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Touch Screen EIMA 2026 - CONTROL</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Boostrap-->
+	<link href="css/bootstrap-grid.css" rel="stylesheet">
+	<!--Link foglio CSS-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--Google font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;700&display=swap" rel="stylesheet">
+	<!--JavaScript-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/2bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="tabs-container">
+        <!-- Pulsanti delle schede -->
+        <div class="tabs-nav">
+            <button class="tab-button active" onclick="openTab(event, 'scheda1')">1</button>
+            <button class="tab-button" onclick="openTab(event, 'scheda2')">2</button>
+            <button class="tab-button" onclick="openTab(event, 'scheda3')">3</button>
+        </div>
+
+        <!-- Contenuto delle schede -->
+        <div class="tabs-content">
+            <div id="scheda1" class="tab-panel active">
+				<div class="row"> 
+			 		<div class="col-12">
+                	<h1>Engine Management System</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-5">
+                	<h5>Engine Management Systems (EMS) manage various aspects of a vehicle’s engine, including fuel injection, ignition timing, and other critical engine functions.</h5>
+					</div>
+					<div class="col-7">
+					<p>• 2 connectors 196 pins in total<br>
+					• Max. 12 cylinders up to 14,000 rpm<br>
+					• 12 low pressure injection<br>
+					• 12 ignition<br>
+					• 4 electronic throttle control<br>
+					• 4 Variable Valve Timing (VVT)<br>
+					• 4 Lambda interfaces wide band<br>
+					• 4 Lambda switching<br>
+					• 3 CAN and 2 FlexRay</p>
+					</div>
+				</div>
+           </div>
+
+            <div id="scheda2" class="tab-panel">
+                <div class="row"> 
+			 		<div class="col-12">
+                	<h1>Engine management system</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-5">
+					<h5>Engine Management Systems (EMS) manage various aspects of a vehicle’s engine, including fuel injection, ignition timing, and other critical engine functions.<br>
+					This 4- to 6-cylinder diesel EMS is designed for a wide range of applications, including industrial equipment, APUs and military vehicles.</h5>
+					</div>
+					<div class="col-7">
+					<p>• Dual voltage 24 V / 12 V operation<br>
+					• Rack control for 2, 4 or 6 unit pump injectors<br>
+					• On-board 24 V to 12 V DC-DC converter for standard 12 V automotive actuators<br>
+					• 16 general purpose analog inputs<br>
+					• 1 PT200 input<br>
+					• 1 PT1000 input<br>
+					• 6 digital inputs<br>
+					• 8 low side outputs<br>
+					• 8 low side outputs with current feedback<br>
+					• 3 low side high current outputs<br>
+					• 2 full H-bridge outputs<br>
+					• 2 CAN lines optoisolated<br>
+					• CA Bayonet / VG95234 Mil standard connectors</p>
+					</div>
+            	</div>
+			</div>
+			
+			<div id="scheda3" class="tab-panel">
+                <div class="row"> 
+			 		<div class="col-12">
+                	<h1>Actua Customizable ECU</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-5">
+					<h5>Actua is a highly configurable electronic control unit designed for the off‑highway market. <br>Through MTA-developed software solutions, customers can configure and adapt the ECUs to their application requirements, benefiting from a flexible, scalable, and cost-effective platform that accelerates product development and integration.</h5><br>
+					<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Technical Data Sheet</button>
+					</div>
+					<div class="col-7">
+					<p>• Universal controller for agricultural or off-highway vehicles<br>
+					• System supervisor with safety features<br>
+					• Dimensions: 185 x 221 x 42 mm (excluding fixing points and connector)<br>
+					• Power supply: 12 Vdc (9-16 Vdc) and 24 Vdc (18-32 Vdc)<br>
+					• Protection degree: IP67<br>
+					• 58 inputs, 32 outputs, 2 Vref 5 Vdc/8 Vdc outputs, 1 Vref 15 Vdc output (at 24 Vdc) and 1 h-bridge (at 12 Vdc)<br>
+					• 4 CAN bus, 2 LIN, 1 USB (optional), 1 Ethernet BroadR-Reach (optional), 1 RS232 (optional) interfaces<br>
+					• RTC (optional)<br>
+					• Connector: Tyco 154 pins<br>
+					• 3 axis accelerometer (optional)<br>
+					• External flash memory for datalogging (optional)<br><br>
+					Customizable with MTA STUDIO.<br>
+					Simulable with MTA CORE SIMULATOR.</p>
+					</div>
+            	</div>
+			</div>
+            
+        </div>
+    </div>
+	
+	
+	<!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <embed src="pdf/MTA_ACTUA_Technical Data Sheet_v1.3.pdf"
+                               frameborder="0" width="100%" height="500px">
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- Script JavaScript per gestire l'apertura -->
+    <script>
+        function openTab(event, tabId) {
+            // Nasconde tutti i pannelli di contenuto
+            const panels = document.querySelectorAll('.tab-panel');
+            panels.forEach(panel => panel.classList.remove('active'));
+
+            // Rimuove la classe 'active' da tutti i pulsanti
+            const buttons = document.querySelectorAll('.tab-button');
+            buttons.forEach(button => button.classList.remove('active'));
+
+            // Mostra il pannello corrente e aggiunge la classe 'active' al pulsante cliccato
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
